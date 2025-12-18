@@ -1,0 +1,245 @@
+/* GLOBAL */
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  
+  /* Ride-booking background */
+  background: linear-gradient(135deg, #00c68f 0%, #d6fbe8 100%);
+  
+  /* Better depth */
+  background-attachment: fixed;
+
+  color: #222;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 700;
+  color: #0f2233;
+}
+
+.lead {
+  font-size: 1.25rem;
+  color: #445;
+}
+
+/* HEADER */
+.site-header {
+  background: #ffffff;
+  border-bottom: 1px solid #e4e6ea;
+  padding: 16px 0;
+  position: sticky;
+  top: 0;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0d2b3c;
+  text-decoration: none;
+}
+
+/* NAVIGATION */
+.nav a {
+  margin-left: 22px;
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  transition: 0.15s;
+}
+
+.nav a.active,
+.nav a:hover {
+  color: #0aa1c2;
+}
+
+/* HERO */
+.hero {
+  padding: 80px 0 50px;
+  text-align: left;
+}
+
+.hero h1 {
+  font-size: 2.6rem;
+  background: linear-gradient(90deg, #0aa1c2, #087b98);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.btn-group {
+  margin-top: 25px;
+}
+
+.btn,
+.btn-outline {
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn {
+  background: linear-gradient(90deg, #0aa1c2, #087b98);
+  color: #fff;
+}
+
+.btn-outline {
+  border: 2px solid #0aa1c2;
+  color: #0aa1c2;
+}
+
+/* CARD GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+  margin-top: 25px;
+}
+
+.card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  border: none;
+}
+
+
+.section {
+  padding: 40px 0;
+  background: transparent;
+}
+
+
+.feature-block {
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #e4e6ea;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.05);
+}
+
+/* FORM */
+.form input,
+.form textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #cfd6dd;
+  margin-bottom: 18px;
+  background: #fff;
+}
+
+
+.tip-icon {
+  margin-right: 8px;
+  color: #0aa1c2;
+}
+
+.card h2 i {
+  margin-right: 8px;
+  color: #0aa1c2;
+}
+
+li i {
+  margin-right: 6px;
+  color: #0aa1c2;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #0aa1c2, #087b98);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: 800;
+}
+
+.hero-title {
+  font-size: 2.8rem;
+  line-height: 1.2;
+}
+
+.card h4 i {
+  margin-right: 8px;
+  color: #0aa1c2;
+}
+
+.section h2 i,
+.section h3 i {
+  margin-right: 8px;
+  color: #0aa1c2;
+}
+
+.booking-form label i {
+  margin-right: 6px;
+  color: #0aa1c2;
+}
+
+.booking-form {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+
+.btn {
+  background: #00a86b;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn:hover {
+  background: #00945f;
+}
+
+.btn-outline {
+  border: 2px solid #00a86b;
+  color: #00a86b;
+}
+
+.btn-outline:hover {
+  background: #00a86b;
+  color: white;
+}
+
+.site-header {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.site-footer {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+.vehicle-block {
+  text-align: center;
+}
+
+.vehicle-top-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+}

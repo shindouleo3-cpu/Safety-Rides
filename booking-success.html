@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Booking Successful</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">Safety Ride</a>
+
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="book.html">Book a Ride</a>
+      <a href="features.html">Features</a>
+      <a href="safety.html">Safety Tips</a>
+    <a href="about-contact.html">About & Contact</a>
+
+    </nav>
+  </div>
+</header>
+
+<main class="container section">
+  <h1><i class="fa-solid fa-circle-check"></i> Booking Submitted</h1>
+  <p class="lead">Your booking request has been recorded.</p>
+
+  <div class="card">
+    <p><strong><i class="fa-solid fa-phone"></i> Contact Number:</strong> <span id="contact"></span></p>
+    <p><strong><i class="fa-solid fa-location-dot"></i> Pick-up:</strong> <span id="pickup"></span></p>
+    <p><strong><i class="fa-solid fa-flag-checkered"></i> Destination:</strong> <span id="destination"></span></p>
+    <p><strong><i class="fa-solid fa-calendar-day"></i> Date:</strong> <span id="date"></span></p>
+    <p><strong><i class="fa-solid fa-clock"></i> Time:</strong> <span id="time"></span></p>
+    <p><strong><i class="fa-solid fa-user"></i> Passengers:</strong> <span id="passengers"></span></p>
+    <p><strong><i class="fa-solid fa-car-side"></i> Vehicle Type:</strong> <span id="vehicle"></span></p>
+</div>
+
+
+  <p><a href="book.html">Book Again</a></p>
+  <p><a href="index.html">← Back to Home</a></p>
+</main>
+
+<script>
+  const params = new URLSearchParams(window.location.search);
+  document.getElementById("contact").textContent = params.get("contact");
+  document.getElementById("pickup").textContent = params.get("pickup");
+  document.getElementById("destination").textContent = params.get("destination");
+  document.getElementById("date").textContent = params.get("date");
+  document.getElementById("time").textContent = params.get("time");
+  document.getElementById("passengers").textContent = params.get("passengers");
+  document.getElementById("vehicle").textContent = params.get("vehicle");
+</script>
+
+<footer class="site-footer">
+  <div class="container">© Safety Ride — Project Proposal</div>
+</footer>
+
+</body>
+</html>

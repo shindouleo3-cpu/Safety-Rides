@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Safety Ride — Book a Ride</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">Safety Ride</a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="book.html" class="active">Book a Ride</a>
+      <a href="features.html">Features</a>
+      <a href="safety.html">Safety Tips</a>
+     <a href="about-contact.html">About & Contact</a>
+
+    </nav>
+  </div>
+</header>
+
+<main class="container section">
+  <h1><i class="fa-solid fa-car-side"></i> Book a Ride</h1>
+  <p class="lead">This booking form is for presentation purposes only.</p>
+
+  <form class="form booking-form" action="booking-success.html" method="GET">
+
+    <label><i class="fa-solid fa-phone"></i> Contact Number</label>
+    <input type="tel" name="contact" placeholder="09xx-xxx-xxxx" required>
+
+    <label><i class="fa-solid fa-location-dot"></i> Pick-up Location</label>
+    <input type="text" name="pickup" required>
+
+    <label><i class="fa-solid fa-flag-checkered"></i> Drop-off Location</label>
+    <input type="text" name="destination" required>
+
+    <label><i class="fa-solid fa-calendar"></i> Date</label>
+    <input type="date" name="date" required>
+
+    <label><i class="fa-solid fa-clock"></i> Time</label>
+    <input type="time" name="time" required>
+
+    <label><i class="fa-solid fa-user"></i> Passengers</label>
+    <select name="passengers" required>
+      <option value="">Select...</option>
+      <option>1 Passenger</option>
+      <option>2 Passengers</option>
+      <option>3 Passengers</option>
+      <option>4+ Passengers</option>
+    </select>
+
+    <label><i class="fa-solid fa-car"></i> Vehicle Type</label>
+    <select name="vehicle" required>
+      <option value="">Select...</option>
+      <option>Motorcycle Ride</option>
+      <option>Taxi</option>
+      <option>Van</option>
+    </select>
+
+    <button class="btn" type="submit">
+      <i class="fa-solid fa-check"></i> Submit
+    </button>
+</form>
+
+  <p><a href="index.html" style="text-decoration: none; color: black; font-weight: bold;">← Back</a></p>
+</main>
+
+<footer class="site-footer">
+  <div class="container" style="
+    margin-left: 630px;">
+    © Safety Ride — Project Proposal
+    </div>
+</footer>
+
+</body>
+</html>

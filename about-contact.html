@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Safety Ride — About & Contact</title>
+
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+ <style>
+.team-container {
+display: flex;
+flex-wrap: wrap;
+gap: 30px;
+margin-top: 30px;
+justify-content: flex-start;
+
+}
+
+.team-member {
+/* Calculate width for 4 items in a row, minus gap */
+flex: 1 1 calc(25% - 15px); 
+max-width: 180px; /* Adjusted max width for 4 columns */
+text-align: center;
+padding: 10px;
+border: 1px solid #ddd;
+border-radius: 8px;
+box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+background-color: #f9f9f9;
+
+}
+
+.team-member img {
+width: 100%;
+max-width: 120px; /* Adjusted image size */
+height: auto;
+border-radius: 50%;
+margin-bottom: 10px;
+object-fit: cover;
+aspect-ratio: 1 / 1;
+border: 3px solid #007bff;
+
+}
+
+.team-member h3 {
+margin: 0;
+font-size: 0.9em; /* Slightly smaller font for 4 names */
+color: #333;
+
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 992px) {
+.team-member {
+flex: 1 1 calc(33.333% - 15px); /* Three per row */
+
+}
+
+}
+
+@media (max-width: 768px) {
+.team-member {
+flex: 1 1 calc(50% - 10px); /* Two per row on tablet/small screens */
+
+}
+
+}
+
+ @media (max-width: 480px) {
+    .team-member {
+flex: 1 1 100%; /* One per row on phones */
+max-width: 100%;
+
+}
+
+}
+
+ </style>
+ </head>
+
+<body>
+
+<header class="site-header">
+ <div class="container header-inner">
+<a class="brand" href="index.html">Safety Ride</a>
+<nav class="nav">
+<a href="index.html">Home</a>
+<a href="book.html">Book a Ride</a>
+<a href="features.html">Features</a>
+<a href="safety.html">Safety Tips</a>
+<a href="about-contact.html" class="active">About & Contact</a>
+</nav>
+</div>
+</header>
+
+<main class="container section">
+
+<h1><i class="fa-solid fa-circle-info"></i> About Safety Ride</h1>
+
+<p>
+Safety Ride is a project proposal designed to demonstrate the importance of safety features 
+in ride-hailing applications. It aims to show how commuters can stay safe before, during, 
+and after every ride through proper guidelines, verification steps, and emergency tools.
+</p>
+
+<h2><i class="fa-solid fa-people-group"></i> Project Members</h2>
+
+ <div class="team-container">
+
+ <div class="team-member">
+ <img src="images/4df69b9a-f8fd-4fb0-8f47-206975c1d547.jpg" alt="Photo of Calib L. Padao">
+ <h3>Calib L. Padao</h3>
+ </div>
+
+</div> <!-- CLOSE team-container -->
+
+<hr style="margin: 40px 0; border: none; border-top: 1px solid #ccc;" />
+
+
+<h1><i class="fa-solid fa-envelope" style="margin-bottom: 0px;"></i> Contact Us</h1> 
+<br>
+<p style="margin-top: 0px; margin-right: 350px;"> This form is for demonstration and proposal purposes only. It does not send real submissions.</p>
+
+<form class="form" style="max-width: 600px;">
+<label><i class="fa-solid fa-user"></i> Name</label>
+<input type="text" placeholder="Enter your name">
+
+<label><i class="fa-solid fa-envelope"></i> Email</label>
+<input type="email" placeholder="Enter your email">
+
+<label><i class="fa-solid fa-phone"></i> Contact Number</label>
+<input type="tel" placeholder="09xx-xxx-xxxx">
+
+<label><i class="fa-solid fa-message"></i> Message</label>
+<textarea rows="5" placeholder="Enter your message"></textarea>
+
+<button class="btn" type="button">
+<i class="fa-solid fa-paper-plane"></i> Submit
+</button>
+</form>
+
+<div style="margin-top: 30px;">
+<a href="index.html" style="text-decoration: none; color: black; font-weight: bold;">← Back to Home</a>
+</div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container" style="
+    margin-left: 630px;">
+    © Safety Ride — Project Proposal
+    </div>
+</footer>
+
+</body>
+</html>
